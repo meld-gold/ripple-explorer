@@ -6,6 +6,25 @@ This repo contains the source code for the block explorer of the XRP Ledger host
 
 This project uses [Vite](https://vitejs.dev/). You can find information about how to use it [here](https://vitejs.dev/guide/cli.html).
 
+## Quick start
+
+Run the local Ripple node:
+
+```bash
+git clone git@github.com:meld-gold/xrp-testing-setup.git
+cd xrp-testing-setup
+docker compose up --build
+```
+
+Run the Explorer:
+
+```bash
+git clone git@github.com:meld-gold/ripple-explorer.git
+cd ripple-explorer
+npm install
+npm start
+```
+
 ## Basic requirements
 
 ### Install Node and NPM
