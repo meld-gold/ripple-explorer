@@ -72,6 +72,3 @@ chrome-user-data
 
 #DEV deployment
 deploy.sh
-
-#ENV
-.env

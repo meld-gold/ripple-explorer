@@ -1,5 +1,7 @@
 # XRPL Explorer
 
+NOTE: This fork is hardcoded to work against the local Ripple node.
+
 This repo contains the source code for the block explorer of the XRP Ledger hosted at livenet.xrpl.org.
 
 This project uses [Vite](https://vitejs.dev/). You can find information about how to use it [here](https://vitejs.dev/guide/cli.html).
@@ -84,8 +86,8 @@ Since `canvas` does not provide pre-built binaries for Apple chips during `npm i
 1. US English (default)
 1. Spanish
 1. French
-1. Japanese 
-1. Korean 
+1. Japanese
+1. Korean
 
 When updating translation entires or adding new languages consult the guide [Translating](./docs/translating.md).
 

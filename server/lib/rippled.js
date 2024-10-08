@@ -7,8 +7,8 @@ const RIPPLEDS = []
 process.env.VITE_RIPPLED_HOST?.split(',').forEach((d) => {
   const rippled = d.split(':')
   RIPPLEDS.push(
-    `wss://${rippled[0]}:${rippled[1] || process.env.VITE_RIPPLED_WS_PORT}`,
-    `wss://${rippled[0]}`,
+    `ws://${rippled[0]}:${rippled[1] || process.env.VITE_RIPPLED_WS_PORT}`,
+    `ws://${rippled[0]}`,
   )
 })
 
@@ -19,7 +19,7 @@ const HAS_P2P_SOCKET =
   process.env.VITE_P2P_RIPPLED_HOST !== ''
 const P2P_RIPPLED_CLIENT = HAS_P2P_SOCKET
   ? new XrplClient([
-      `wss://${process.env.VITE_P2P_RIPPLED_HOST}:${process.env.VITE_RIPPLED_WS_PORT}`,
+      `ws://${process.env.VITE_P2P_RIPPLED_HOST}:${process.env.VITE_RIPPLED_WS_PORT}`,
     ])
   : undefined
 
