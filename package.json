@@ -144,9 +144,5 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "prettier": "@xrplf/prettier-config",
-  "engines": {
-    "node": ">=18.0.0 <19",
-    "npm": ">=7.14.0 <10.0.0"
-  }
+  "prettier": "@xrplf/prettier-config"
 }
