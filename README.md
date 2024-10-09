@@ -21,7 +21,7 @@ Run the Explorer:
 ```bash
 git clone git@github.com:meld-gold/ripple-explorer.git
 cd ripple-explorer
-npm install
+npm install --force
 npm start
 ```
 
